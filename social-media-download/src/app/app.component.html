@@ -1,0 +1,14 @@
+<div>
+  <h1>Download Instagram Video</h1>
+  <input type="text" [(ngModel)]="url" placeholder="Enter Instagram URL" />
+  <button (click)="downloadVideo()">Download</button>
+  <div *ngIf="progress > 0">
+    <h2>Downloading: {{ progress }}mb</h2>
+  </div>
+</div>
+
+<div>
+  <h1>YouTube to MP3 Converter</h1>
+  <input type="text" [(ngModel)]="youtubeURL" placeholder="Enter YouTube URL">
+  <button (click)="downloadYtmp3()">Convert and Download</button>
+</div>
